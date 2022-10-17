@@ -27,7 +27,7 @@ st.set_page_config(layout="wide")
 
 
 # Image
-image=Image.open("/Users/user/Desktop/Proposal/Ineq.jpeg")
+image=Image.open("Ineq.jpeg")
 new_image2 = image.resize((1300, 400))
 st.image(new_image2,use_column_width=False)
 
@@ -72,7 +72,7 @@ with header:
 
 # In[10]:
 with data:
-    data = pd.read_csv("/Users/user/Desktop/Proposal/World_indicators.csv")
+    data = pd.read_csv("World_indicators.csv")
     if st.checkbox("Preview a Sample of our Dataset"):
         st.text("""
                  The dataset we will be using to launch our organization’s activities and mission is “World Development Indicators dataset”. 
@@ -102,7 +102,7 @@ with Interactive_visu:
                 Our mission will focus on socio-economics, demographics and shocks and fragility dimensions.
                 """)
     
-        image1=Image.open("/Users/user/Desktop/Proposal/UN.png")
+        image1=Image.open("UN.png")
         new_image = image1.resize((800, 600))
         img.image(new_image,width=None, caption= "Layers of Inequality")
        
@@ -136,7 +136,7 @@ with Interactive_visu_3:
         col1.markdown("<h2 style='text-align: center; color: black;'> Alone we can do so little </h2>", unsafe_allow_html=True)
         col1.markdown("<h3 style='text-align: center; color: black;'> Together we can do so much </h3>", unsafe_allow_html=True)
         
-        image2=Image.open("/Users/user/Desktop/Proposal/Donate.png")
+        image2=Image.open("Donate.png")
         new_image1 = image2.resize((550, 300))
         img1.image(new_image1,width=None, caption= " Giving is the greatest act of grace")
        
